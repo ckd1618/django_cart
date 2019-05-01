@@ -120,3 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#we have 2 image fields in our models, this makes sure the images are uploaded to the right location
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #this joins the base directory to the staticfiles
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'), #another join, this is where all the static data will be saved
+    )
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media') #this is where we will save all the media images for products and category
