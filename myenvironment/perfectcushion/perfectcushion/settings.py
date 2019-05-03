@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
+    'import_export',
     
 ]
 
@@ -115,6 +116,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -127,3 +129,5 @@ STATICFILES_DIRS = (
     )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media') #this is where we will save all the media images for products and category
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
