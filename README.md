@@ -42,23 +42,25 @@ pip install django-import-export
 //1.)'import_export' to Installed apps  
 //2.) IMPORT_EXPORT_USE_TRANSACTIONS = True 
 //in admin.py: from import_export.admin import ImportExportModelAdmin  
-//adjust the ProductAdmin argument to have ImportExportModelAdmin  
-//now you can run the server
-//to add thumbnail images to the product listing in the admin page:
-from django.utils.html import format_html 
-//in admin.py create a function def thumbnail(self,obj): and have it return a string with an img tag
-//in the terminal, retrieve the data with:
-python manage.py shell
-from shop.models import Category, Product
-Product.objects.all()
-p= Product.objects.all()
-c= Category.objects.all()
-//Product.objects.get(id=1)
-//Product.objects.get(pk=1)
-//catId1 = Category.objects.get(id=1)
-//prodWCatId1 = Product.objects.filter(category=catId1)
-//prodEle = Product.objects.filter(name__startswith='Elephant')
-//prodEleCont = Product.objects.filter(name__contains='Elephant')
-//Product.objects.filter(price__range(10,25))
-
+//adjust the ProductAdmin argument to have ImportExportModelAdmin   
+//now you can run the server  
+//to add thumbnail images to the product listing in the admin page:  
+from django.utils.html import format_html   
+//in admin.py create a function def thumbnail(self,obj): and have it return a string with an img tag  
+//in the terminal, retrieve the data with:  
+python manage.py shell  
+from shop.models import Category, Product  
+Product.objects.all()  
+p= Product.objects.all()  
+c= Category.objects.all()  
+//Product.objects.get(id=1)  
+//Product.objects.get(pk=1)  
+//catId1 = Category.objects.get(id=1)  
+//prodWCatId1 = Product.objects.filter(category=catId1)  
+//prodEle = Product.objects.filter(name__startswith='Elephant')  
+//prodEleCont = Product.objects.filter(name__contains='Elephant')  
+//Product.objects.filter(price__range(10,25))  
+//p=Product.objects.create(name='pug dog', price=30)   
+//p.save()  
+//p.delete()  
 
