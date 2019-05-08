@@ -71,4 +71,6 @@ c= Category.objects.all()
 //in shop/templates create footer.html header.html navbar.html
 //in views add the function allProdCat  
 //create a file in perfectcushion/shop called urls.py
+//goto pein django.urls import include and then add a reference to shop/urls.py under urlpatterns  
+//create a file in shop/templates/shop called category.html
 
