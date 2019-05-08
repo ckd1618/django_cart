@@ -57,7 +57,7 @@ ROOT_URLCONF = 'perfectcushion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'shop','templates/')], #will make it accessible across the website
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

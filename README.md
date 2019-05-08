@@ -64,3 +64,11 @@ c= Category.objects.all()
 //p.save()  
 //p.delete()  
 
+//in shop create create folder templates, then in templates create shop folder  
+//in perfectcushion/settings.py add to TEMPLATES list the following: 'DIRS': [os.path.join(BASE_DIR, 'shop','templates/')],  
+//in shop/templates/shop create base.html
+//create a folder called img inside of static and add a logo and banner images
+//in shop/templates create footer.html header.html navbar.html
+//in views add the function allProdCat  
+//create a file in perfectcushion/shop called urls.py
+
