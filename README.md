@@ -72,5 +72,10 @@ c= Category.objects.all()
 //in views add the function allProdCat  
 //create a file in perfectcushion/shop called urls.py
 //goto pein django.urls import include and then add a reference to shop/urls.py under urlpatterns  
-//create a file in shop/templates/shop called category.html
+//create a file in shop/templates/shop called category.html  
+
+//**********admin and 3 webpages are up****************
+
+//in perfectcushion/shop create context_processors.py
+//add it to templates in settings.py
 
