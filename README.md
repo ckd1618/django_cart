@@ -79,3 +79,8 @@ c= Category.objects.all()
 //in perfectcushion/shop create context_processors.py
 //add it to templates in settings.py
 
+//localize bootstrap after copy pasting the code into static under css and js folders, run:
+python manage.py collectstatic
+//with this command line I collect all the static data along with the bootstrap js and css files
+
+//fonts.google.com
