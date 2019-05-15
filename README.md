@@ -89,3 +89,11 @@ python manage.py collectstatic
 
 //when dealing with css div.myclass refers to a class found on the same line
 // div .myclass refer to two separate lines
+
+//acquire fontawesome 5.0.13 and add its webfont folder to static and its all.min.css file to static/css
+python manage.py collectstatic
+
+python manage.py startapp search_app
+//create the templates folder in search_app and add it to installed apps in settins.py, besure to add it to templates = 'DIRS' as well
+
+python manage.py startapp cart

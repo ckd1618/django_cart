@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'import_export',
+    'search_app',
     
 ]
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'perfectcushion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'shop','templates/')], #will make it accessible across the website
+        'DIRS': [os.path.join(BASE_DIR, 'shop','templates/'), os.path.join(BASE_DIR, 'search_app', 'templates/')], #will make it accessible across the website
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
