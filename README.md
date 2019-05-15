@@ -84,3 +84,8 @@ python manage.py collectstatic
 //with this command line I collect all the static data along with the bootstrap js and css files
 
 //fonts.google.com
+//select roboto and copy paste the link
+//in the custom.css file, paste the rule under body {}
+
+//when dealing with css div.myclass refers to a class found on the same line
+// div .myclass refer to two separate lines
