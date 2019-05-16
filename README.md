@@ -97,3 +97,16 @@ python manage.py startapp search_app
 //create the templates folder in search_app and add it to installed apps in settins.py, besure to add it to templates = 'DIRS' as well
 
 python manage.py startapp cart
+
+python manage.py makemigrations
+python manage.py migrate
+// whenever you create a templates folder, make sure you register the folder in settings.py under Templates
+
+pip install stripe
+//add stripe to installed apps in settings.py
+
+python manage.py startapp order
+//add order to settings.py
+
+//copy C:\Users\ckd16\Desktop\ag\django_cart\myenvironment\Lib\site-packages\django\contrib\admin\templates\admin\edit_inline\tabular.html
+//this file controls the behavior of the order item section of the order record

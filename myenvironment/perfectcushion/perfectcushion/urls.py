@@ -24,6 +24,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('shop/', include('shop.urls')), #this includes all the urls of the shop app
     path('search_app/', include('search_app.urls')),
+    path('cart/', include('cart.urls')),
 
 ]
 
