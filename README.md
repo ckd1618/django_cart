@@ -110,3 +110,8 @@ python manage.py startapp order
 
 //copy C:\Users\ckd16\Desktop\ag\django_cart\myenvironment\Lib\site-packages\django\contrib\admin\templates\admin\edit_inline\tabular.html
 //this file controls the behavior of the order item section of the order record
+
+pip install django-crispy-forms
+//to help design the signup form, via the aid of bootstrap classes
+//after installing, make sure to register it in settings.py
+// also add: CRISPY_TEMPLATE_PACK = 'bootstrap4'

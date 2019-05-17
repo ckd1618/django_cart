@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cart',
     'stripe',
     'order',
+    'crispy_forms',
     
 ]
 
@@ -142,4 +143,4 @@ IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 STRIPE_PUBLISHABLE_KEY = 'pk_test_eMa5fCSOnhU7wIOuX3giu4MV00K5tHaXCZ'
 STRIPE_SECRET_KEY = 'sk_test_lz1YzCCHvFGleee0CAg2LaRD00XjgBZHj1'
-# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -46,7 +46,7 @@ def cart_detail(request, total=0, counter=0, cart_items= None):
   except ObjectDoesNotExist:
     pass
   stripe_total = int(total * 100)
-  description = 'Poofy Paradise - New Order'
+  description = 'New Order'
   stripe.api_key = settings.STRIPE_SECRET_KEY
   data_key = settings.STRIPE_PUBLISHABLE_KEY
   if request.method == 'POST':
@@ -70,7 +70,7 @@ def cart_detail(request, total=0, counter=0, cart_items= None):
       )
       charge = stripe.Charge.create(
         amount=stripe_total,
-        currency="gbp",
+        currency="usd",
         description=description,
         customer=customer.id
       )
@@ -107,14 +107,9 @@ def cart_detail(request, total=0, counter=0, cart_items= None):
           order_item.delete()
           # terminal confirmation when saved
           print('The order has been created')
-        # try:
-        # 	# Calling the sendEmail function
-        # 	sendEmail(order_details.id)
-        # 	print('The order email has been sent to the customer.')
-        # except IOError as e:
-        # 	return e
-        # return redirect('order:thanks', order_details.id)
-        return redirect('shop:allProdCat')
+
+        return redirect('order:thanks', order_details.id)
+        # return redirect('shop:allProdCat')
       except ObjectDoesNotExist:
       	pass
     except stripe.error.CardError as e:
